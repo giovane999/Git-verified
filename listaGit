@@ -1,0 +1,15 @@
+/.git/HEAD
+/.git/objects/info/packs
+/.git/description
+/.git/config
+/.git/COMMIT_EDITMSG
+/.git/index
+/.git/packed-refs
+/.git/refs/heads/master
+/.git/refs/remotes/origin/HEAD
+/.git/refs/stash
+/.git/logs/HEAD
+/.git/logs/refs/heads/master
+/.git/logs/refs/remotes/origin/HEAD
+/.git/info/refs
+/.git/info/exclude
