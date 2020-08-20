@@ -13,7 +13,7 @@ for dominio in $(cat lista-url-git.txt);do # Get list domains
 	for gits in $(cat listaGit);do # Get list of files git 
 
 		httpResposta=$(curl -I $dominio$gits 2>/dev/null | head -n 1 | cut -d$' ' -f2) # Get response HTTP code 
-		if [ $httpResposta == "200" ] # If HTTP code = 200, Url Vulnerable
+		if [ $httpResposta == "200" ] || [ $httpResposta == "301" ] # If HTTP code = 200, Url Vulnerable
 			then	
 				printf "${LAZUL}${BOLD}[+] Domínio Vulnerável${NC} $dominio$gits${NC}"; 
 				echo
